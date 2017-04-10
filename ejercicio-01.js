@@ -18,6 +18,16 @@ function isValidCard(creditCardNumber) {
       return ("Faltan numeros");
     }
 
+    function digitos (creditCardNumber) { // Función para tercera prueba
+      var valorNumeros = creditCardNumber.toString();
+      var largoNumeros = valorNumeros.length;
+      if (largoNumeros == 16) {
+        return true;
+      }
+    }
+
+
+
     // Cuarta y quinta prueba
 
    function validarNumeros (creditCardNumber) {
@@ -31,15 +41,6 @@ function isValidCard(creditCardNumber) {
         return true;
     }
   }
-
-    function digitos (creditCardNumber) { // Función para tercera prueba
-      var valorNumeros = creditCardNumber.toString();
-      var largoNumeros = valorNumeros.length;
-      if (largoNumeros == 16) {
-        return true;
-      }
-    }
-
 
     function conversorNumeros (numero) {
       return parseInt(numero);
